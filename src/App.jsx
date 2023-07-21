@@ -10,12 +10,12 @@ import staticBack from "./images/static.png"
 function App() {
 
     return (
-        <div className="App bg-port-dark text-port-light snap-y-mandatory h-[320vh]">
+        <div className="App bg-port-dark text-port-light snap-y-mandatory h-[415vh]">
             <Navbar/>
             <Panel1/>
-            <div className="h-[30rem]"></div>
+            <div className="h-[30rem] w-screen"></div>
             <Panel2/>
-            <div className="h-[30rem] bg-port-dark"></div>
+            <div className="h-[30rem] w-screen"></div>
             <Panel3/>
             <SocialMedia/>
             {/* <Cursor/> */}

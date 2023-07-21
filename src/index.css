@@ -26,3 +26,7 @@ scrollbar-width: none;  /* Firefox */
 html {
     scroll-snap-type: y proximity;
 }
+
+html{
+    scroll-behavior: smooth;
+}

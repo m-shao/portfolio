@@ -12,34 +12,34 @@ export default {
       }
     },
     screens: {
-      '2xl-m': {'max': '1535px'},
+      '2xl': {'max': '1535px'},
       // => @media (max-width: 1535px) { ... }
 
-      'xl-m': {'max': '1-m279px'},
+      'xl': {'max': '1-m279px'},
       // => @media (max-width: 1279px) { ... }
 
-      'lg-m': {'max': '1023px'},
+      'lg': {'max': '1023px'},
       // => @media (max-width: 1023px) { ... }
 
-      'md-m': {'max': '767px'},
+      'md': {'max': '767px'},
       // => @media (max-width: 767px) { ... }
 
-      'sm-m': {'max': '639px'},
+      'sm': {'max': '639px'},
       // => @media (max-width: 639px) { ... }
-      '2xl-s': {'min': '1535px'},
-      // => @media (min-width: 1535px) { ... }
+      // '2xl-s': {'min': '1535px'},
+      // // => @media (min-width: 1535px) { ... }
 
-      'xl-s': {'min': '1-m279px'},
-      // => @media (inx-width: 1279px) { ... }
+      // 'xl-s': {'min': '1-m279px'},
+      // // => @media (inx-width: 1279px) { ... }
 
-      'lg-s': {'min': '1023px'},
-      // => @media (inx-width: 1023px) { ... }
+      // 'lg-s': {'min': '1023px'},
+      // // => @media (inx-width: 1023px) { ... }
 
-      'md-s': {'min': '767px'},
-      // => @media (inx-width: 767px) { ... }
+      // 'md-s': {'min': '767px'},
+      // // => @media (inx-width: 767px) { ... }
 
-      'sm-s': {'min': '639px'},
-      // => @media (inx-width: 639px) { ... }
+      // 'sm-s': {'min': '639px'},
+      // // => @media (inx-width: 639px) { ... }
     }
   },
   plugins: [],

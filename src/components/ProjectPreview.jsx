@@ -2,7 +2,7 @@ import {useRef, useEffect, useState } from 'react'
 import CircleType from 'circletype'
 import { gsap } from 'gsap'
 
-function ProjectPreview({ name, isWinner, winnerName="", colour, image}) {
+function ProjectPreview({ name, isWinner, winnerName="", colour, image, link}) {
 
     const [isHovered, setIsHovered] = useState(false);
     const winnerRef = useRef(null)
@@ -48,11 +48,11 @@ function ProjectPreview({ name, isWinner, winnerName="", colour, image}) {
 
     return (
         <>
-            <div className='w-full h-[18vw] flex justify-center items-center relative'>
+            <a href={link} target='_blank' className='w-full h-[18vw] flex justify-center items-center relative cursor-pointer'>
                 <div className={'w-full h-[12vw] flex justify-center items-center group ' + colour}
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}>
-                    <h2 className='tracking-[2vw] group-hover:tracking-normal group-hover:scale-125 transition-all duration-700 cursor-default text-[6vw]'>
+                    <h2 className='tracking-[2vw] group-hover:tracking-normal group-hover:scale-125 transition-all duration-700 cursor-default text-[6vw] cursor-pointer'>
                         {/* style={{fontSize: Math.floor(80/name.length) + "vw"}}*/}
                         {name}
                     </h2>
@@ -62,7 +62,7 @@ function ProjectPreview({ name, isWinner, winnerName="", colour, image}) {
                         </h3>
                     }
                 </div>
-            </div>
+            </a>
             <div className={"cursor fixed top-0 left-0 pointer-events-none z-50 overflow-visible w-[25vw] opacity-0 transition-all duration-500 " + (isHovered && "opacity-100")}>
                 <div className='circle fixed flex justify-center items-center w-[25vw]' >
                     <img className='w-[25vw] -translate-x-1/2 -translate-y-1/2' src={image} alt="" />
