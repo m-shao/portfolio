@@ -43,7 +43,7 @@ function Globe() {
         // initialize the camera
         const camera = new PerspectiveCamera(
         50,
-        2,
+        windowSize.width / windowSize.height,
         0.1,
         1000
         );
@@ -92,7 +92,7 @@ function Globe() {
     
     return (
         <div className='w-screen h-screen'>
-            <canvas id="canvas" className='bg-port-dark globe-canvas w-screen h-full static'></canvas>
+            <canvas id="canvas" className='static w-screen h-full bg-port-dark globe-canvas'></canvas>
         </div>
     )
 }

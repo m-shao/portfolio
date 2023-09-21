@@ -21,6 +21,7 @@ function Panel1() {
                     trigger: ".panel1",
                     start: "top 5%",
                     toggleActions: "restart none none reverse", 
+                    markers: false
                 },
             }
         )
@@ -32,8 +33,8 @@ function Panel1() {
         <div id='panel1' className='bg-port-dark flex -translate-x-[50vw] h-screen w-full sticky top-0 '>
             <Globe/>
             <div className="w-[50vw] bg-port-dark flex flex-col justify-center text-port-light px-6 panel1">
-                <h1 className="text-[6vw] panel1-text w-[50vw]">Who Is Minglun Shao?</h1>
-                <p className="font-[Montserrat] text-[1.04vw] max-w-[40vw] leading-[190%] w-[50vw] panel1-text">
+                <h1 className="text-5xl md:text-[6vw] panel1-text max-w-[50vw]">Who Is Minglun Shao?</h1>
+                <p className="font-[Montserrat] text-xs md:text-[1.04vw] max-w-[40vw] leading-[190%] w-[50vw] panel1-text">
                 Hi! I am a Highschool Fullstack Developer and UI/UX Designer based in Toronto, Canada.
                     I have a passion for programming, video games, and messing around. I design, code and deliver
                     high quality Web Experiences that leave a lasting impression on my visitors ; )</p>
