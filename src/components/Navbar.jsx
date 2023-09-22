@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useEffect } from 'react'
 import gsap from 'gsap'
 
@@ -45,20 +46,22 @@ function Navbar() {
             <div className="font-[montserrat] flex-1 md:flex justify-center mr-[10%] hidden">
                 <ul className="flex flex-col gap-4 text-[1.1vw]">
                     <li className="cursor-pointer nav-link group">
-                        <a href="#panel1">
-                            <h2>About&nbsp;Me</h2>
+                        <Link to="tech-stack">
+                            <h2>Tech&nbsp;Stack</h2>
                             <div className="h-[1px] w-0 bg-port-light origin-right transition-all duration-300 group-hover:w-full"></div>
-                        </a>
+                        </Link>
                     </li>
                     <li className="cursor-pointer nav-link group">
-                        <a href="#panel3">
+                        <Link to="projects">
                             <h2>Projects</h2>
                             <div className="h-[1px] w-0 bg-port-light origin-right transition-all duration-300 group-hover:w-4/5"></div>
-                        </a>
+                        </Link>
                     </li>
                     <li className="cursor-pointer nav-link group">
-                        <h2>Contact</h2>
-                        <div className="h-[1px] w-0 bg-port-light origin-right transition-all duration-300 group-hover:w-4/5"></div>
+                        <Link>
+                            <h2>Contact</h2>
+                            <div className="h-[1px] w-0 bg-port-light origin-right transition-all duration-300 group-hover:w-4/5"></div>
+                        </Link>
                     </li>
                 </ul>
             </div>

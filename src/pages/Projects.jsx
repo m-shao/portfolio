@@ -1,14 +1,14 @@
-import ProjectPreview from "./ProjectPreview"
+import ProjectPreview from "../components/ProjectPreview"
 
 import poogatype from '../images/poogatype.png'
 import coffeeCoach from '../images/coffeeCoach.png'
 import outfitSocial from '../images/outfitSocial.png'
 
 
-function Panel3() {
+function Projects() {
 
     return (
-        <div id='panel3' className='w-screen py-48 sm:py-96 bg-port-dark flex items-center flex-col min-h-screen sticky'>
+        <div className='sticky flex flex-col items-center w-screen min-h-screen py-48 bg-port-dark text-port-light'>
             <h1 className='text-[10vw]'>Projects</h1>
             <div className='flex flex-col w-[60vw]'>
                 <ProjectPreview name="Poogatype" isWinner={false} colour="bg-indigo-700" image={poogatype} link={"https://poogatype.web.app/"}/>
@@ -20,4 +20,4 @@ function Panel3() {
     )
 }
 
-export default Panel3
+export default Projects

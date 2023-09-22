@@ -5,7 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 import {techStack} from '../data/constants'
 
-function Panel2() {
+function TechStack() {
     const [movingText, setMovingText] = useState('TECH STACK  ')
 
     useEffect(() => {
@@ -44,7 +44,7 @@ function Panel2() {
     }, [])
 
     return (
-        <div className='h-screen w-screen bg-port-dark text-[6vw] overflow-hidden flex justify-center items-center panel-2 sticky top-0'>
+        <div className='h-screen w-screen bg-port-dark text-[6vw] overflow-hidden flex justify-center items-center panel-2 sticky top-0 text-port-light'>
             <div className='absolute w-[200vw] flex tech-stack-1 top-0 right-0 translate-x-[50%]'>
                 {[...Array(10)].map((_, index) => {
                     return(
@@ -73,4 +73,4 @@ function Panel2() {
     )
 }
 
-export default Panel2
+export default TechStack
