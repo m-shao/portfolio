@@ -11,7 +11,6 @@ function Home() {
             <Navbar/>
             <Panel1/>
             <div className="h-[30rem] w-screen"></div>
-            <SocialMedia/>
             <Footer/>
         </div>
     )
