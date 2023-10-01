@@ -37,7 +37,7 @@ function Panel1() {
                 <p className="font-[Montserrat] text-xs md:text-[1.04vw] max-w-[40vw] leading-[190%] w-[50vw] panel1-text">
                 Hi! I am a Highschool Fullstack Developer and UI/UX Designer based in Toronto, Canada.
                     I have a passion for programming, video games, and messing around. I design, code and deliver
-                    high quality Web Experiences that leave a lasting impression on my visitors ; )</p>
+                    cool shit you should check me out.</p>
             </div>
         </div>
     )

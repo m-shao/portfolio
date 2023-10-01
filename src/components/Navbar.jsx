@@ -59,7 +59,7 @@ function Navbar() {
                             </Link>
                         </li>
                         <li className="cursor-pointer nav-link group">
-                            <Link>
+                            <Link to="contact">
                                 <h2>Contact</h2>
                                 <div className="h-[1px] w-0 bg-port-light origin-right transition-all duration-300 group-hover:w-4/5"></div>
                             </Link>

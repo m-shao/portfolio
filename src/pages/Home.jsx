@@ -1,7 +1,10 @@
+import {useEffect, useRef, useState} from 'react'
+
 import Panel1 from "../components/Panel1"
 import Navbar from "../components/Navbar"
 import SocialMedia from "../components/SocialMedia"
 import Footer from "../components/Footer"
+import Cursor from "../components/Cursor"
 
 
 function Home() {

@@ -1,7 +1,7 @@
 import { useForm, ValidationError } from '@formspree/react';
 import { useState } from 'react'
 
-const Footer = () => {
+const Footer = ({ isContactPage }) => {
 	// const [message, setMessage] = useState('');
 	// const [email, setEmail] = useState('');
     // const [ disabled, setDisabled] = useState(false);
@@ -10,13 +10,16 @@ const Footer = () => {
     const [state, handleSubmit] = useForm("mqkvyyjo");
 	
     return (
-        <section className='sticky flex items-center justify-center w-screen min-h-screen h-auto py-24 bg-port-dark font-[montserrat] flex-col gap-12'>
+        <section className='sticky flex items-center justify-center w-screen min-h-screen h-auto py-24 bg-port-dark font-[montserrat] flex-col gap-12 text-port-light'>
             <div className='w-2/3 font-[BuiltTitling] text-7xl md:text-8xl'>
                 <h1>This is my 
                     <span className="bg-gradient-to-r from-red-500 via-blue-500 to-green-400 text-transparent bg-clip-text animate-gradient bg-300%">
                         &nbsp;SICK&nbsp;
                     </span>
-                    Footer
+                    <span>
+                        {isContactPage ? ("Contact Page") : ("Footer")}
+                    </span>
+                    &trade;
                  </h1>
             </div>
             
