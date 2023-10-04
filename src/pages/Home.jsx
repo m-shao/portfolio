@@ -6,8 +6,17 @@ import SocialMedia from "../components/SocialMedia"
 import Footer from "../components/Footer"
 import Cursor from "../components/Cursor"
 
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 function Home() {
+
+    useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger)
+        ScrollTrigger.refresh()
+        return() => ScrollTrigger.getAll().forEach(t => t.kill())
+    }, [])
+
 
     return (
         <div className="App bg-port-dark text-port-light snap-y-mandatory h-[260vh]">
