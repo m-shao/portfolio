@@ -21,9 +21,12 @@ function Home() {
     return (
         <div className="App bg-port-dark text-port-light snap-y-mandatory h-[260vh]">
             <Navbar/>
-            <Panel1/>
-            <div className="h-[30rem] w-screen"></div>
-            <Footer/>
+            <div className='sticky'>
+                <Panel1/>
+                <div className="h-[30rem] w-screen"></div>
+                <Footer/>
+            </div>
+            
         </div>
     )
 }
