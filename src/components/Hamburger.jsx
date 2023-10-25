@@ -13,7 +13,6 @@ const Hamburger = () => {
     }
 
     useEffect(() => {
-        console.log(location.pathname === "/")
         setOpen(false)
     }, [location])
 
@@ -21,7 +20,7 @@ const Hamburger = () => {
         <>
             <button onClick={toggleOpen} 
                 className={"fixed z-50 flex items-center justify-center w-24 h-24 origin-top-left rounded-full top-4 right-4 md:top-8 md:right-8 lg:right-12 lg:top-12 xl:top-16 xl:right-16 bg-port-dark transition-all ease-in-out duration-500 "
-                + (open && "bg-port-light h-[40rem] w-[40rem] translate-x-[50%] -translate-y-[50%] ")
+                + (open && "bg-port-light h-[40rem] w-[40rem] lg:translate-x-[50%] translate-x-[45%] lg:-translate-y-[50%] -translate-y-[45%] ")
                 + (location.pathname === "/" && " hidden")}>
                 <div className='relative space-y-4'>
                     <span className={"block w-12 h-0.5 rounded-sm transition-transform ease-in-out duration-500 " 

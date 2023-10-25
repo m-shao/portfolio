@@ -35,17 +35,17 @@ function Navbar() {
 
     return (
         <>
-            <div className="sticky top-0 flex items-center justify-center w-full gap-12 px-0 py-6 md:justify-start md:p-6 bg-port-dark">
+            <div className="sticky top-0 flex items-center justify-center w-full gap-10 py-6 pl-12 md:pl-6 md:gap-12 bg-port-dark">
                 <div className='flex flex-col items-center'>
-                    <div className="name-title md:text-[20vw] text-[24vw] leading-[85%] z-50 hi top-0 left-0 flex gap-[1vw]">
+                    <div className="name-title text-[20vw] leading-[85%] z-50 hi top-0 left-0 flex gap-[1vw]">
                         <h1>MINGLUN</h1>
                         <img className='w-[5vw]' src={star} alt="" />
                         <h1>SHAO</h1>
                     </div>
                     <p className="job-title font-[montserrat] md:text-[1.5vw] text-[2.7vw]">Fullstack Developer & UI/UX Designer </p>
                 </div>
-                <div className="font-[montserrat] flex-1 md:flex justify-center mr-[10%] hidden">
-                    <ul className="flex flex-col gap-4 text-[1.1vw]">
+                <div className="font-[montserrat] flex-1 flex justify-center mr-[10%]">
+                    <ul className="flex flex-col gap-4 text-[max(1.1vw,0.5rem)] min-text-lg">
                         <li className="cursor-pointer nav-link group">
                             <Link to="tech-stack">
                                 <h2>Tech&nbsp;Stack</h2>
