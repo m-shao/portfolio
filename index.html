@@ -1,18 +1,53 @@
 <!DOCTYPE html>
 <html lang="en" class="w-screen overflow-x-hidden bg-port-dark">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Minglun Shao is a young fullstack developer and UI/UX designer based in Toronto, Canada" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
-    <title>Minglun Shao</title>
-    <link rel="icon" href="/favicon.ico" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+	<head>
+		<script type="text/javascript">
+			function insertContentAtEnd(
+				u,
+				id_script_pre_html,
+				id_script_post_html
+			) {
+				var xhr = new XMLHttpRequest();
+				xhr.open('GET', u, true);
+				xhr.onreadystatechange = function () {
+					if (this.readyState !== 4) {
+						return;
+					}
+					if (this.status !== 200) {
+						return;
+					} else {
+						var el = document.createElement('div');
+						document.body.appendChild(el);
+						/* to place at end of document*/ el.innerHTML =
+							this.responseText;
+						if (s1) {
+							eval(document.getElementById(s1).innerHTML);
+						}
+						if (s2) {
+							eval(document.getElementById(s2).innerHTML);
+						}
+					}
+				};
+				xhr.send();
+			}
+		</script>
+
+		<meta charset="UTF-8" />
+		<meta
+			name="description"
+			content="Minglun Shao is a young fullstack developer and UI/UX designer based in Toronto, Canada" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap"
+			rel="stylesheet" />
+		<title>Minglun Shao</title>
+		<link rel="icon" href="/favicon.ico" />
+	</head>
+	<body>
+		<div id="root"></div>
+		<script type="module" src="/src/main.jsx"></script>
+	</body>
 </html>
